@@ -10,8 +10,8 @@
 ## 使用
 ```php
 use KayTools\TimeTool;
-use KayTools\ServerTool;
+use KayTools\RequestTool;
 
 var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
-var_dump(ServerTool::getServerOS());        //Windows
+var_dump(RequestTool::getServerOS());        //Windows
 ```

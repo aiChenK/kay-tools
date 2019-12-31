@@ -8,7 +8,7 @@
 
 namespace KayTools;
 
-class ServerTool
+class RequestTool
 {
 
     /**
