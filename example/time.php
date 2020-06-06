@@ -6,20 +6,14 @@
  * Time: 17:36
  */
 
-require_once '../src/Bootstrap.php';
-\KayTools\Bootstrap::init();
+require_once '../vendor/autoload.php';
 
 use KayTools\TimeTool;
 
 var_dump(TimeTool::friendlyCost(86670));
-var_dump(date('Y-m-d H:i:s', TimeTool::getZeroTimestamp('today')));
-var_dump(date('Y-m-d H:i:s', TimeTool::getZeroTimestamp('week')));
-var_dump(date('Y-m-d H:i:s', TimeTool::getZeroTimestamp('year')));
 
-$rows = [
-    ['time' => time() - 3600],
-    ['time' => time()],
-    ['time' => time() + 2400]
-];
-TimeTool::runTimestampToDate($rows, 'time', 'Y/m/d H:i');
-var_dump($rows);
+var_dump(TimeTool::getZeroTimestamp('today'));
+
+var_dump(TimeTool::format(TimeTool::getZeroTimestamp('week')));
+var_dump(TimeTool::format(TimeTool::getZeroTimestamp('year')));
+

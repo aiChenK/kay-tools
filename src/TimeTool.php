@@ -16,6 +16,9 @@ class TimeTool
      * @param $seconds
      * @param string $default
      * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function friendlyCost($seconds, string $default = '') : string
     {
@@ -62,6 +65,9 @@ class TimeTool
      *
      * @param string $str
      * @return int
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function getZeroTimestamp(string $str = 'today') : int
     {
@@ -105,20 +111,24 @@ class TimeTool
     }
 
     /**
-     * 批量处理数组时间戳至日期格式
+     * 格式化时间
+     * - 暂仅支持时间戳
      *
-     * @param array $rows
-     * @param string $targetKey
+     * @param $time
      * @param string $format
+     * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
-    public static function runTimestampToDate(array &$rows, string $targetKey, string $format = 'Y-m-d H:i:s') : void
+    public static function format($time, string $format = 'Y-m-d H:i:s') : string
     {
-        foreach ($rows as &$row) {
-            if (!isset($row[$targetKey])) {
-                continue;
-            }
-            $row[$targetKey] = $row[$targetKey] ? date($format, substr($row[$targetKey], 0, 10)) : '-';
+        if (!is_numeric($time) || strlen($time) < 10) {
+            return '-';
         }
-        unset($row);
+        if (strlen($time) > 10) {
+            $time = substr($time, 0, 10);
+        }
+        return date($format, $time);
     }
 }

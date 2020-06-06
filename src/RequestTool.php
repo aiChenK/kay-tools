@@ -15,6 +15,9 @@ class RequestTool
      * 获取服务器操作系统
      *
      * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function getServerOS() : string
     {
@@ -25,6 +28,9 @@ class RequestTool
      * 判断是否cli模式运行
      *
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function isUnderCli() : bool
     {
@@ -35,6 +41,9 @@ class RequestTool
      * 获取客户端ip
      *
      * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function getClientIp() : string
     {
@@ -76,6 +85,9 @@ class RequestTool
      * 获取客户端浏览器
      *
      * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function getClientBrowser(): string
     {
@@ -143,6 +155,9 @@ class RequestTool
      * 获取客户端操作系统（常用系统）
      *
      * @return string
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function getClientOs() : string
     {

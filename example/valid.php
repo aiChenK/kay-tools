@@ -6,8 +6,7 @@
  * Time: 17:36
  */
 
-require_once '../src/Bootstrap.php';
-\KayTools\Bootstrap::init();
+require_once '../vendor/autoload.php';
 
 use KayTools\ValidTool;
 

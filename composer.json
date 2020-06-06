@@ -1,19 +1,22 @@
 {
-    "name": "aichenk/kay-tools",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "aiChenK",
-            "email": "aichenk@qq.com"
-        }
-    ],
-    "require": {
-        "php": ">=7.2"
-    },
-    "autoload": {
-        "psr-4": {
-            "KayTools\\" : "src/"
-        }
+  "name": "aichenk/kay-tools",
+  "description": "简单工具类集合",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "aiChenK",
+      "email": "aichenk@qq.com"
     }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "ext-mbstring": "*",
+    "ext-ctype": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "KayTools\\": "src/"
+    }
+  }
 }

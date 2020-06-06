@@ -16,6 +16,9 @@ class ValidTool
      *
      * @param $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function phone(string $text) : bool
     {
@@ -27,6 +30,9 @@ class ValidTool
      *
      * @param string $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function ip(string $text) : bool
     {
@@ -38,6 +44,9 @@ class ValidTool
      *
      * @param string $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function ipv4(string $text) : bool
     {
@@ -49,6 +58,9 @@ class ValidTool
      *
      * @param string $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function ipv6(string $text) : bool
     {
@@ -60,6 +72,9 @@ class ValidTool
      *
      * @param string $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function email(string $text) : bool
     {
@@ -71,6 +86,9 @@ class ValidTool
      *
      * @param string $text
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function url(string $text) : bool
     {
@@ -83,6 +101,9 @@ class ValidTool
      * @param string $text
      * @param bool $strict
      * @return bool
+     *
+     * @author aiChenK
+     * @version 1.0
      */
     public static function idCard(string $text, $strict = false)
     {
@@ -140,5 +161,4 @@ class ValidTool
         $idCardBase = substr($idCard, 0, 17);
         return self::idCardVerifyNumber($idCardBase) == strtoupper(substr($idCard, 17, 1));
     }
-
 }
