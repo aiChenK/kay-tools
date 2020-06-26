@@ -15,3 +15,8 @@ use KayTools\RequestTool;
 var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
 var_dump(RequestTool::getServerOS());        //Windows
 ```
+
+## 更新说明
+
+2020-06-26
+- 增加`Tree`类，主要处理导航树等

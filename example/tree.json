@@ -1,0 +1,644 @@
+{
+  "tree": [
+    {
+      "id": 2,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航1",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 1,
+      "sort": 1,
+      "children": [
+        {
+          "id": 3,
+          "sys_id": 7,
+          "pid": 2,
+          "name": "导航2",
+          "is_hide": 0,
+          "is_open": 0,
+          "is_quick": 0,
+          "sort": 2,
+          "children": [
+            {
+              "id": 34,
+              "sys_id": 7,
+              "pid": 3,
+              "name": "导航wJGiPJ7hN5Rq",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 1
+            },
+            {
+              "id": 5,
+              "sys_id": 7,
+              "pid": 3,
+              "name": "导航55",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 2
+            },
+            {
+              "id": 47,
+              "sys_id": 7,
+              "pid": 3,
+              "name": "导航dimjf1KqYccY",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航MpQEJ97g8OjF",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2,
+      "children": [
+        {
+          "id": 33,
+          "sys_id": 7,
+          "pid": 46,
+          "name": "导航sUtYIogOKUAW",
+          "is_hide": 0,
+          "is_open": 1,
+          "is_quick": 1,
+          "sort": 1
+        },
+        {
+          "id": 48,
+          "sys_id": 7,
+          "pid": 46,
+          "name": "导航_zL5nbDR2QY_",
+          "is_hide": 0,
+          "is_open": 1,
+          "is_quick": 0,
+          "sort": 3,
+          "children": [
+            {
+              "id": 4,
+              "sys_id": 7,
+              "pid": 48,
+              "name": "导航2",
+              "is_hide": 0,
+              "is_open": 1,
+              "is_quick": 0,
+              "sort": 2,
+              "children": [
+                {
+                  "id": 58,
+                  "sys_id": 7,
+                  "pid": 4,
+                  "name": "导航YVeFZUzyx0cG",
+                  "is_hide": 0,
+                  "is_open": 0,
+                  "is_quick": 0,
+                  "sort": 0
+                }
+              ],
+              "tag": "你好"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航EIXjIjZCaBpy",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 4,
+      "children": [
+        {
+          "id": 50,
+          "sys_id": 7,
+          "pid": 49,
+          "name": "导航gNb3XOBNvQAt",
+          "is_hide": 0,
+          "is_open": 0,
+          "is_quick": 0,
+          "sort": 1,
+          "children": [
+            {
+              "id": 51,
+              "sys_id": 7,
+              "pid": 50,
+              "name": "导航fxvDe5PWbUTI",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航hF7h1fMPzMyk",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 5,
+      "children": [
+        {
+          "id": 53,
+          "sys_id": 7,
+          "pid": 52,
+          "name": "导航kEd_fAGxZ5cE",
+          "is_hide": 0,
+          "is_open": 0,
+          "is_quick": 0,
+          "sort": 48,
+          "children": [
+            {
+              "id": 54,
+              "sys_id": 7,
+              "pid": 53,
+              "name": "新到货",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 1,
+              "sort": 35,
+              "children": [
+                {
+                  "id": 55,
+                  "sys_id": 7,
+                  "pid": 54,
+                  "name": "新到货2",
+                  "is_hide": 0,
+                  "is_open": 1,
+                  "is_quick": 1,
+                  "sort": 0
+                }
+              ]
+            }
+          ],
+          "tag": "main"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航8",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 6,
+      "children": [
+        {
+          "id": 8,
+          "sys_id": 7,
+          "pid": 7,
+          "name": "导航556",
+          "is_hide": 0,
+          "is_open": 0,
+          "is_quick": 0,
+          "sort": 2,
+          "children": [
+            {
+              "id": 32,
+              "sys_id": 7,
+              "pid": 8,
+              "name": "导航otiooTbps1sf",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 1
+            },
+            {
+              "id": 35,
+              "sys_id": 7,
+              "pid": 8,
+              "name": "导航Nh7M8OZCn4uG",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 2
+            },
+            {
+              "id": 36,
+              "sys_id": 7,
+              "pid": 8,
+              "name": "导航otiooTbps1sf",
+              "is_hide": 0,
+              "is_open": 0,
+              "is_quick": 0,
+              "sort": 0,
+              "children": [
+                {
+                  "id": 43,
+                  "sys_id": 7,
+                  "pid": 36,
+                  "name": "string",
+                  "is_hide": 0,
+                  "is_open": 1,
+                  "is_quick": 1,
+                  "sort": 1
+                },
+                {
+                  "id": 41,
+                  "sys_id": 7,
+                  "pid": 36,
+                  "name": "导航5",
+                  "is_hide": 0,
+                  "is_open": 0,
+                  "is_quick": 0,
+                  "sort": 4
+                },
+                {
+                  "id": 45,
+                  "sys_id": 7,
+                  "pid": 36,
+                  "name": "导航3u4fb8ePa5ir",
+                  "is_hide": 0,
+                  "is_open": 0,
+                  "is_quick": 0,
+                  "sort": 5
+                },
+                {
+                  "id": 44,
+                  "sys_id": 7,
+                  "pid": 36,
+                  "name": "导航PvuliBNTjh4n",
+                  "is_hide": 0,
+                  "is_open": 0,
+                  "is_quick": 0,
+                  "sort": 0
+                },
+                {
+                  "id": 42,
+                  "sys_id": 7,
+                  "pid": 36,
+                  "name": "导航5",
+                  "is_hide": 0,
+                  "is_open": 0,
+                  "is_quick": 0,
+                  "sort": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "123",
+      "is_hide": 1,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 57,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航8xvtgjRfC6U4",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 65,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航vWwfiCa2mq5s",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    }
+  ],
+  "source": [
+    {
+      "id": 2,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航1",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 1,
+      "sort": 1
+    },
+    {
+      "id": 50,
+      "sys_id": 7,
+      "pid": 49,
+      "name": "导航gNb3XOBNvQAt",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 1
+    },
+    {
+      "id": 33,
+      "sys_id": 7,
+      "pid": 46,
+      "name": "导航sUtYIogOKUAW",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 1,
+      "sort": 1
+    },
+    {
+      "id": 43,
+      "sys_id": 7,
+      "pid": 36,
+      "name": "string",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 1,
+      "sort": 1
+    },
+    {
+      "id": 32,
+      "sys_id": 7,
+      "pid": 8,
+      "name": "导航otiooTbps1sf",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 1
+    },
+    {
+      "id": 34,
+      "sys_id": 7,
+      "pid": 3,
+      "name": "导航wJGiPJ7hN5Rq",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 1
+    },
+    {
+      "id": 4,
+      "sys_id": 7,
+      "pid": 48,
+      "name": "导航2",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 35,
+      "sys_id": 7,
+      "pid": 8,
+      "name": "导航Nh7M8OZCn4uG",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 8,
+      "sys_id": 7,
+      "pid": 7,
+      "name": "导航556",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 5,
+      "sys_id": 7,
+      "pid": 3,
+      "name": "导航55",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 3,
+      "sys_id": 7,
+      "pid": 2,
+      "name": "导航2",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 46,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航MpQEJ97g8OjF",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 2
+    },
+    {
+      "id": 47,
+      "sys_id": 7,
+      "pid": 3,
+      "name": "导航dimjf1KqYccY",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 3
+    },
+    {
+      "id": 48,
+      "sys_id": 7,
+      "pid": 46,
+      "name": "导航_zL5nbDR2QY_",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 0,
+      "sort": 3
+    },
+    {
+      "id": 41,
+      "sys_id": 7,
+      "pid": 36,
+      "name": "导航5",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 4
+    },
+    {
+      "id": 49,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航EIXjIjZCaBpy",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 4
+    },
+    {
+      "id": 51,
+      "sys_id": 7,
+      "pid": 50,
+      "name": "导航fxvDe5PWbUTI",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 4
+    },
+    {
+      "id": 52,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航hF7h1fMPzMyk",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 5
+    },
+    {
+      "id": 45,
+      "sys_id": 7,
+      "pid": 36,
+      "name": "导航3u4fb8ePa5ir",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 5
+    },
+    {
+      "id": 7,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航8",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 6
+    },
+    {
+      "id": 54,
+      "sys_id": 7,
+      "pid": 53,
+      "name": "新到货",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 1,
+      "sort": 35
+    },
+    {
+      "id": 53,
+      "sys_id": 7,
+      "pid": 52,
+      "name": "导航kEd_fAGxZ5cE",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 48
+    },
+    {
+      "id": 55,
+      "sys_id": 7,
+      "pid": 54,
+      "name": "新到货2",
+      "is_hide": 0,
+      "is_open": 1,
+      "is_quick": 1,
+      "sort": 0
+    },
+    {
+      "id": 44,
+      "sys_id": 7,
+      "pid": 36,
+      "name": "导航PvuliBNTjh4n",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 42,
+      "sys_id": 7,
+      "pid": 36,
+      "name": "导航5",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 36,
+      "sys_id": 7,
+      "pid": 8,
+      "name": "导航otiooTbps1sf",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 56,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "123",
+      "is_hide": 1,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 57,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航8xvtgjRfC6U4",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 65,
+      "sys_id": 7,
+      "pid": 0,
+      "name": "导航vWwfiCa2mq5s",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 58,
+      "sys_id": 7,
+      "pid": 4,
+      "name": "导航YVeFZUzyx0cG",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    },
+    {
+      "id": 15,
+      "sys_id": 7,
+      "pid": 59,
+      "name": "导航YQW3MyiCB2hz",
+      "is_hide": 0,
+      "is_open": 0,
+      "is_quick": 0,
+      "sort": 0
+    }
+  ]
+}
