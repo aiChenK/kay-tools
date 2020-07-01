@@ -10,33 +10,6 @@ namespace KayTools;
 
 class RequestTool
 {
-
-    /**
-     * 获取服务器操作系统
-     *
-     * @return string
-     *
-     * @author aiChenK
-     * @version 1.0
-     */
-    public static function getServerOS() : string
-    {
-        return PATH_SEPARATOR == ':' ? 'Linux' : 'Windows';
-    }
-
-    /**
-     * 判断是否cli模式运行
-     *
-     * @return bool
-     *
-     * @author aiChenK
-     * @version 1.0
-     */
-    public static function isUnderCli() : bool
-    {
-        return !!preg_match("/cli/i", php_sapi_name());
-    }
-
     /**
      * 获取客户端ip
      *
@@ -48,9 +21,6 @@ class RequestTool
     public static function getClientIp() : string
     {
         $ip = 'unknown';
-        if (self::isUnderCli()) {
-            return $ip;
-        }
 
         $keys = ['HTTP_X_FORWARDED_FOR', 'HTTP_CLIENT_ip', 'REMOTE_ADDR'];
         if (isset($_SERVER)) {
@@ -93,11 +63,8 @@ class RequestTool
     {
         $browser = '未知';
         $version = '';
-        if (self::isUnderCli()) {
-            return $browser;
-        }
 
-        $agent = $_SERVER['HTTP_USER_AGENT'];
+        $agent = ServerTool::getServer('HTTP_USER_AGENT');
         $maps  = [
             [
                 'name' => 'Firefox',
@@ -162,11 +129,8 @@ class RequestTool
     public static function getClientOs() : string
     {
         $os = '未知';
-        if (self::isUnderCli()) {
-            return $os;
-        }
 
-        $agent = $_SERVER['HTTP_USER_AGENT'];
+        $agent = ServerTool::getServer('HTTP_USER_AGENT');
         $maps  = [
             [
                 'name' => 'Windows Vista',
