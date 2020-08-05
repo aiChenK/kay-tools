@@ -8,6 +8,8 @@
 
 namespace KayTools;
 
+use WhichBrowser\Parser;
+
 class RequestTool
 {
     /**
@@ -54,133 +56,30 @@ class RequestTool
     /**
      * 获取客户端浏览器
      *
+     * @param string $userAgent
      * @return string
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getClientBrowser(): string
+    public static function getClientBrowser(string $userAgent = ''): string
     {
-        $browser = '未知';
-        $version = '';
-
-        $agent = ServerTool::getServer('HTTP_USER_AGENT');
-        $maps  = [
-            [
-                'name' => 'Firefox',
-                'agent' => 'Firefox/',
-                'preg' => '/Firefox\/([^;)]+)+/i',
-            ],
-            [
-                'name' => 'IE',
-                'agent' => 'MSIE/',
-                'preg' => '/MSIE\s+([^;)]+)+/i',
-            ],
-            [
-                'name' => 'Opera',
-                'agent' => 'OPR',
-                'preg' => '/OPR\/([\d\.]+)/',
-            ],
-            [
-                'name' => 'Edge',
-                'agent' => 'Edge',
-                'preg' => '/Edge\/([\d\.]+)/',
-            ],
-            [
-                'name' => 'Chrome',
-                'agent' => 'Chrome',
-                'preg' => '/Chrome\/([\d\.]+)/',
-            ],
-            [
-                'name' => 'IE',
-                'agent' => ['rv:', 'Gecko'],
-                'preg' => '/rv:([\d\.]+)/',
-            ]
-        ];
-        foreach ($maps as $map) {
-            $pos   = is_string($map['agent']) ? [$map['agent']] : $map['agent'];
-            $exist = false;
-            foreach ($pos as $val) {
-                if (stripos($agent, $val) > 0) {
-                    $exist = true;
-                    continue;
-                }
-                $exist = false;
-            }
-            if (!$exist) {
-                continue;
-            }
-            preg_match($map['preg'], $agent, $info);
-            $browser = $map['name'];
-            $version = $info[1];
-            break;
-        }
-        return $browser . ($version ? "({$version})" : '');
+        $result = new Parser($userAgent ?: ServerTool::getServer('HTTP_USER_AGENT'));
+        return $result->browser->toString();
     }
 
     /**
      * 获取客户端操作系统（常用系统）
      *
+     * @param string $userAgent
      * @return string
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getClientOs() : string
+    public static function getClientOs(string $userAgent = '') : string
     {
-        $os = '未知';
-
-        $agent = ServerTool::getServer('HTTP_USER_AGENT');
-        $maps  = [
-            [
-                'name' => 'Windows Vista',
-                'preg' => ['/win/i', '/nt 6.0/i']
-            ],
-            [
-                'name' => 'Windows 7',
-                'preg' => ['/win/i', '/nt 6.1/i']
-            ],
-            [
-                'name' => 'Windows 8',
-                'preg' => ['/win/i', '/nt 6.2/i']
-            ],
-            [
-                'name' => 'Windows 10',
-                'preg' => ['/win/i', '/nt 10.0/i']
-            ],
-            [
-                'name' => 'Windows XP',
-                'preg' => ['/win/i', '/nt 5.1/i']
-            ],
-            [
-                'name' => 'Windows NT',
-                'preg' => ['/win/i', '/nt/i']
-            ],
-            [
-                'name' => 'Linux',
-                'preg' => '/linux/i'
-            ],
-            [
-                'name' => 'Unix',
-                'preg' => '/unix/i'
-            ]
-        ];
-        foreach ($maps as $map) {
-            $pos   = is_string($map['preg']) ? [$map['preg']] : $map['preg'];
-            $exist = false;
-            foreach ($pos as $val) {
-                if (preg_match($val, $agent)) {
-                    $exist = true;
-                    continue;
-                }
-                $exist = false;
-            }
-            if (!$exist) {
-                continue;
-            }
-            $os = $map['name'];
-            break;
-        }
-        return $os;
+        $result = new Parser($userAgent ?: ServerTool::getServer('HTTP_USER_AGENT'));
+        return $result->os->toString();
     }
 }
