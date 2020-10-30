@@ -15,6 +15,9 @@ var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
 ```
 
 ## 更新说明
+2020-10-30 - v1.3.2
+- `getZeroTimestamp`支持获取13位时间戳
+
 2020-08-05 - v1.3.1
 - 增加`whichbrowser/parser`依赖，替换获取浏览器及操作系统方法
 

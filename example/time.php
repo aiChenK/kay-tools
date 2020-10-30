@@ -13,6 +13,7 @@ use KayTools\TimeTool;
 var_dump(TimeTool::friendlyCost(86670));
 
 var_dump(TimeTool::getZeroTimestamp('today'));
+var_dump(TimeTool::getZeroTimestamp('today', true));
 
 var_dump(TimeTool::format(TimeTool::getZeroTimestamp('week')));
 var_dump(TimeTool::format(TimeTool::getZeroTimestamp('year')));

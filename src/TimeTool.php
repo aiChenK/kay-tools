@@ -64,50 +64,51 @@ class TimeTool
      * 获取零点时间戳
      *
      * @param string $str
+     * @param bool $micro   --是否毫秒级（13位时间戳，java默认）
      * @return int
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getZeroTimestamp(string $str = 'today') : int
+    public static function getZeroTimestamp(string $str = 'today', $micro = false) : int
     {
         $time = $_SERVER['REQUEST_TIME'] ?? time();
         switch ($str) {
             case 'today':
             case 'd':
-                return strtotime('today', $time);
+                $time = strtotime('today', $time);
                 break;
             case 'week':
             case 'w':
-                return strtotime('this week 00:00:00', $time);
+                $time = strtotime('this week 00:00:00', $time);
                 break;
             case 'month':
             case 'm':
-                return strtotime(date('Y-m-01'), $time);
+                $time = strtotime(date('Y-m-01'), $time);
                 break;
             case 'year':
             case 'y':
-                return strtotime(date('Y-01-01'), $time);
+                $time = strtotime(date('Y-01-01'), $time);
                 break;
             case 'yesterday':
-                return strtotime('yesterday', $time);
+                $time = strtotime('yesterday', $time);
                 break;
             case 'tomorrow':
-                return strtotime('tomorrow', $time);
+                $time = strtotime('tomorrow', $time);
                 break;
             case 'last week':
-                return strtotime('last week 00:00:00', $time);
+                $time = strtotime('last week 00:00:00', $time);
                 break;
             case 'last month':
-                return strtotime(date('Y-m-01') . '-1 month', $time);
+                $time = strtotime(date('Y-m-01') . '-1 month', $time);
                 break;
             case 'last year':
-                return strtotime(date('Y-01-01') . '-1 year', $time);
+                $time = strtotime(date('Y-01-01') . '-1 year', $time);
                 break;
             default:
-                return strtotime($str . ' 00:00:00', $time);
-                break;
+                $time = strtotime($str . ' 00:00:00', $time);
         }
+        return $micro ? $time * 1000 : $time;
     }
 
     /**
