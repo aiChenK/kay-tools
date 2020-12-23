@@ -15,6 +15,9 @@ var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
 ```
 
 ## 更新说明
+2020-12-23 - v1.3.3
+- 修复`ServerTool`获取域名方法
+
 2020-10-30 - v1.3.2
 - `getZeroTimestamp`支持获取13位时间戳
 

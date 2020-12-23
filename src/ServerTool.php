@@ -36,16 +36,7 @@ class ServerTool
      */
     public static function getHost(bool $port = true): string
     {
-        $host = '';
-        if ($host = self::getServer('HTTP_X_FORWARDED_HOST')) {
-            return $host;
-        }
-        if ($host = self::getServer('HTTP_X_FORWARDED_HOST')) {
-            return $host;
-        }
-        if ($host = self::getServer('SERVER_NAME')) {
-            $host .= $_SERVER['SERVER_PORT'] == '80' ? '' : ':' . self::getServer('SERVER_NAME');
-        }
+        $host = self::getServer('HTTP_X_REAL_HOST') ?: self::getServer('HTTP_HOST');
         if (!$port && strpos($host, ':')) {
             // 去除端口
             return strstr($host, ':', true);
@@ -84,7 +75,7 @@ class ServerTool
      * @author aiChenK
      * @version 1.0
      */
-    public static function getDomain(bool $port = false): string
+    public static function getDomain(bool $port = true): string
     {
         return self::getScheme() . '://' . self::getHost($port);
     }
