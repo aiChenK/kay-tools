@@ -15,6 +15,9 @@ var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
 ```
 
 ## 更新说明
+2021-01-25 - v1.3.4
+- 更改`ServerTool`获取域名方法
+
 2020-12-23 - v1.3.3
 - 修复`ServerTool`获取域名方法
 

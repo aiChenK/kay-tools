@@ -8,19 +8,18 @@
 
 namespace KayTools;
 
-
 class ServerTool
 {
     /**
      * 获取Server参数
      *
      * @param string $name
-     * @return mixed|string
+     * @return string
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getServer(string $name)
+    public static function getServer(string $name): string
     {
         return $_SERVER[$name] ?? '';
     }
@@ -28,18 +27,26 @@ class ServerTool
     /**
      * 获取host（非代理）
      *
-     * @param bool $port        是否带端口
-     * @return mixed|string
+     * @param bool $withPort        是否带端口
+     * @return string
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getHost(bool $port = true): string
+    public static function getHost(bool $withPort = true): string
     {
-        $host = self::getServer('HTTP_X_REAL_HOST') ?: self::getServer('HTTP_HOST');
-        if (!$port && strpos($host, ':')) {
-            // 去除端口
-            return strstr($host, ':', true);
+        $host = self::getServer('HTTP_X_FORWARDED_HOST');
+        if (!$host) {
+            $host = self::getServer('HTTP_HOST');
+        }
+        if (!$host) {
+            $host = self::getServer('SERVER_NAME') . ':' . self::getServer('SERVER_PORT');
+        }
+
+        //不需要端口或为默认端口则去除端口信息
+        $port = StrTool::substr(strstr($host, ':'), 1);
+        if (!$withPort || (!self::isSsl() && $port == '80') || (self::isSsl() && $port == '443')) {
+            $host = strstr($host, ':', true);
         }
         return $host;
     }
@@ -47,12 +54,12 @@ class ServerTool
     /**
      * 获取一级域名（暂不考虑双后缀）
      *
-     * @return mixed|string
+     * @return string
      *
      * @author aiChenK
      * @version 1.0
      */
-    public static function getTopHost()
+    public static function getTopHost(): string
     {
         $host = self::getHost(false);
         if (!$host) {
