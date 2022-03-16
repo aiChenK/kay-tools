@@ -8,8 +8,6 @@
 
 namespace KayTools;
 
-use WhichBrowser\Parser;
-
 class RequestTool
 {
     /**
@@ -41,7 +39,7 @@ class RequestTool
             }
         }
 
-        if (trim($ip) == '::1') {
+        if (trim($ip) === '::1') {
             $ip = '127.0.0.1';
         }
         if (is_string($ip)) {
@@ -53,33 +51,4 @@ class RequestTool
         return $ip;
     }
 
-    /**
-     * 获取客户端浏览器
-     *
-     * @param string $userAgent
-     * @return string
-     *
-     * @author aiChenK
-     * @version 1.0
-     */
-    public static function getClientBrowser(string $userAgent = ''): string
-    {
-        $result = new Parser($userAgent ?: ServerTool::getServer('HTTP_USER_AGENT'));
-        return $result->browser->toString();
-    }
-
-    /**
-     * 获取客户端操作系统（常用系统）
-     *
-     * @param string $userAgent
-     * @return string
-     *
-     * @author aiChenK
-     * @version 1.0
-     */
-    public static function getClientOs(string $userAgent = '') : string
-    {
-        $result = new Parser($userAgent ?: ServerTool::getServer('HTTP_USER_AGENT'));
-        return $result->os->toString();
-    }
 }

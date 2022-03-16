@@ -15,6 +15,10 @@ var_dump(TimeTool::friendlyCost(86670));    //1天4分30秒
 ```
 
 ## 更新说明
+2022-03-16 - v2.0.0
+- 去除`RequestTool`中客户端信息获取方法
+- 去除`whichbrowser/parser`依赖
+
 2021-01-25 - v1.3.4
 - 更改`ServerTool`获取域名方法
 
